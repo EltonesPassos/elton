@@ -1,11 +1,11 @@
 const CACHE_NAME = 'meu-pwa-cache-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  'manifest.json',  // Sem a barra inicial
-  'icone192.png',    // Sem a barra inicial
-  'icone512.png',    // Sem a barra inicial
-  'service-worker.js', // Sem a barra inicial
+  '/elton/',               // Página inicial, apontando para a subpasta
+  '/elton/index.html',     // Caminho correto para index.html
+  '/elton/manifest.json',  // Caminho correto para manifest.json
+  '/elton/icone192.png',   // Caminho correto para o ícone de 192x192
+  '/elton/icone512.png',   // Caminho correto para o ícone de 512x512
+  '/elton/service-worker.js',  // Caminho correto para o service worker
 ];
 
 self.addEventListener('install', (event) => {
@@ -56,3 +56,4 @@ self.addEventListener('fetch', (event) => {
       })
   );
 });
+
