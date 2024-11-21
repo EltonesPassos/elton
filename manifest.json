@@ -2,18 +2,18 @@
     "name": "Meu Aplicativo",
     "short_name": "App",
     "description": "Uma breve descrição do meu aplicativo.",
-    "start_url": "/elton/",  // Corrigido para a subpasta 'elton/'
+    "start_url": "/elton/",  // Corrigido para apontar para a subpasta 'elton/'
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#4CAF50",
     "icons": [
         {
-            "src": "icone192.png",  // Caminho relativo
+            "src": "/elton/icone192.png",  // Caminho correto para o ícone de 192x192
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "icone512.png",  // Caminho relativo
+            "src": "/elton/icone512.png",  // Caminho correto para o ícone de 512x512
             "sizes": "512x512",
             "type": "image/png"
         }
