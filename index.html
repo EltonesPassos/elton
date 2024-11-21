@@ -7,7 +7,7 @@
     <title>Olá, Mundo!</title>
 
     <!-- Link para o Manifest -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json"> <!-- Alterado para não ter a barra inicial -->
 
     <!-- Meta tags para suportar PWA em dispositivos móveis -->
     <meta name="theme-color" content="#4CAF50">
@@ -16,7 +16,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js')
+                navigator.serviceWorker.register('service-worker.js') <!-- Alterado para não ter a barra inicial -->
                     .then((registration) => {
                         console.log('Service Worker registrado com sucesso:', registration);
                     })
@@ -33,3 +33,4 @@
 </body>
 
 </html>
+
